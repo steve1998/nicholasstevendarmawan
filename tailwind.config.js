@@ -1,9 +1,14 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./src/content/**/*.{md}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        inconsolata: ["Inconsolata", "monospace"],
+        firacode: ["Fira Code", "monospace"],
+        unicaone: ["Unica One", "cursive"],
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/typography")],
+};
