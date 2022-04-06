@@ -9,10 +9,21 @@ function App() {
   return (
     <div className="h-full w-full flex flex-col">
       <div className="font-poppins px-8 py-8 lg:px-[420px]">
-        <Navbar />
-        <Hero />
-        <Work />
-        <Projects />
+        <div className="flex flex-col justify-between h-screen">
+          <div>
+            <Navbar />
+          </div>
+          <div>
+            <Hero />
+          </div>
+          <div className="h-1/4"></div>
+        </div>
+        <div className="mb-32">
+          <Work />
+        </div>
+        <div className="mb-32">
+          <Projects />
+        </div>
       </div>
       <Footer />
     </div>

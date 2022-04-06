@@ -12,7 +12,7 @@ function Projects() {
   }, []);
 
   return (
-    <div className="py-16 flex flex-col">
+    <div id="projects" className="flex flex-col">
       <div className="flex flex-col mb-16">
         <span className="font-firacode text-teal-600 text-lg lg:text-xl mb-2">
           02

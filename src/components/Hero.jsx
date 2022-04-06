@@ -3,7 +3,7 @@ import links from "./shared/links.json";
 
 function Hero() {
   return (
-    <div className="flex flex-col py-32">
+    <div className="flex flex-col h-3/4">
       <div className="flex flex-col space-y-2 mb-4 tracking-tighter">
         <span className="font-extrabold text-xl lg:text-2xl bg-clip-text text-transparent gradient-teal-to-sky">
           Hi, I'm
