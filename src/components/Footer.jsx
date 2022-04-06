@@ -11,7 +11,7 @@ function Footer() {
       <div className="flex flex-col mb-16">
         <a
           className="transition duration-200 hover:text-slate-300"
-          href={links.linkedin}
+          href={`mailto:${links.email}`}
           target="_blank"
           rel={"noopener noreferrer"}
         >
@@ -34,9 +34,20 @@ function Footer() {
           GitHub
         </a>
       </div>
-      <div>
+      <div className="flex flex-col">
         <span>
           Built with <b>React.js</b> and <b>Tailwind CSS.</b>
+        </span>
+        <span>
+          Code on{" "}
+          <a
+            className="transition duration-200 hover:text-slate-300"
+            href={links.website}
+            target="_blank"
+            rel={"noopener noreferrer"}
+          >
+            GitHub
+          </a>
         </span>
       </div>
     </div>
