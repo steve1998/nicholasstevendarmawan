@@ -3,10 +3,10 @@ name: GitHub Pages CI/CD
 on:
   push:
     branches:
-      - [gh-pages]
+      - gh-pages
   pull_request:
     branches:
-      - [gh-pages]
+      - gh-pages
 
 jobs:
   build:
