@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -38,7 +41,6 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ github.ref == 'refs/head/main' }}
 
     steps:
       - name: Download artifact
